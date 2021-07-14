@@ -1,0 +1,20 @@
+CREATE TABLE LINKS(
+	id INT NOT NULL PRIMARY KEY,
+	Device_Type VARCHAR(20) NOT NULL,
+	Stats_Access_Link VARCHAR(50) NOT NULL);
+
+INSERT INTO LINKS VALUES (1, 'AXO145','<url>https://xcd32112.smart_meter.com</url>');
+INSERT INTO LINKS VALUES (2, 'TRU151','<url>http://tXh67.dia_meter.com</url>');
+INSERT INTO LINKS VALUES (3, 'ZOD231','<url>http://yT5495.smart_meter.com</url>');
+INSERT INTO LINKS VALUES (4, 'YRT326','<url>https://ret323_TRu.crown.com</url>');
+INSERT INTO LINKS VALUES (5, 'LWR245','<url>https://luwr3243.celcius.com</url>');
+
+ALTER TABLE LINKS ADD COLUMN Basic_Link VARCHAR(50);
+
+UPDATE LINKS SET Basic_Link='xcd32112.smart_meter.com' WHERE id=1;
+UPDATE LINKS SET Basic_Link='tXh67.dia_meter.com' WHERE id=2;
+UPDATE LINKS SET Basic_Link='yT5495.smart_meter.com' WHERE id=3;
+UPDATE LINKS SET Basic_Link='ret323_TRu.crown.com' WHERE id=4;
+UPDATE LINKS SET Basic_Link='luwr3243.celcius.com' WHERE id=5;
+
+SELECT Basic_Link FROM LINKS WHERE Device_Type='AXO145';
