@@ -1,0 +1,45 @@
+country = []
+vaccines = []
+date = []
+dailyVacc = []
+veri = int(input("Please write number of data: "))
+print("Please write names of countries: ")
+for i in range(veri):
+    c = str(input(""))
+    country.append(c)
+print("Please write dates(m,d,yyyy): ")
+for i in range(veri):
+    d = str(input(""))
+    date.append(d)
+print("Please write number of daily vaccination: ")
+for i in range(veri):
+    dV = str(input(""))
+    dailyVacc.append(dV)
+print("Please write names of vaccines: ")
+for i in range(veri):
+    v = str(input(""))
+    vaccines.append(v)
+e='    country   '+'      date       '+' daily_vaccinations '+'    vaccines'
+print(e)
+print ("        ")
+for i in range(veri):
+    print ('  ', country[i] ,'    ', date[i] ,'           ', dailyVacc[i] ,'          ', vaccines[i])
+liste = []
+for i in range(veri):
+    l=dailyVacc[i]
+    liste.append(l)
+for a in range(0,veri):
+    for i in range(a+1,veri):
+         if ((i+1)!=veri) and (liste[a]<liste[(i)]):
+            c=liste[a]
+            liste[a]=liste[i]
+            liste[i]=c
+for i in range(veri):
+    if (liste[0]==dailyVacc[i]):
+        print("The country with the first highest number of daily vaccinations is ", country[i])
+for i in range(veri):
+    if (liste[1]==dailyVacc[i]):
+        print("The country with the second highest number of daily vaccinations is ", country[i])
+for i in range(veri):
+    if (liste[2]==dailyVacc[i]):
+        print("The country with the third highest number of daily vaccinations is ", country[i])
