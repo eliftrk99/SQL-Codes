@@ -1,4 +1,5 @@
-country=["Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina"]vaccines=["Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V"]
+country=["Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina","Argentina"]
+vaccines=["Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V","Sputnik V"]
 date=["12/29/2020","12/30/2020","12/31/2020","1/1/2021","1/2/2021","1/3/2021","1/4/2021","1/5/2021","1/6/2021","1/7/2021","1/8/2021"]
 dailyVacc=["  0  ","15656","15656","11070"," 8776"," 7400"," 6483"," 7984"," 8173"," 8363","10519"]
 e='   country  '+'      date     '+'   daily_vaccinations '+'    vaccines'
